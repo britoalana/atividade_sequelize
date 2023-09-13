@@ -1,0 +1,27 @@
+<h1>Adicionar usuário</h1>
+<form action="/users/create" method="post" class="form">
+
+    <div class="form_control">
+        <label for="name">Nome:</label>
+        <input type="text" name="name" placeholder="Digite o nome do usuário">
+    </div>
+
+    <div class="form_control">
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" placeholder="Digite seu e-mail">
+    </div>
+
+    <div class="form_control">
+        <label for="password">Senha:</label>
+        <input type="password" name="password" placeholder="Digite sua senha">
+    </div>
+
+    <div class="form_control form-checkbox">
+        <input type="checkbox" name="newsletter" checked>
+        <label for="newsletter">Enviar promoções?</label>
+    </div>
+
+    <div class="form_control">
+        <input type="submit" value="Cadastrar">
+    </div>
+</form>

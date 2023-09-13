@@ -1,0 +1,154 @@
+body {
+    background: rgb(241, 176, 203);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#navbar {
+    border-bottom: 1px solid rgb(82, 82, 82);
+    padding: 1.5rem;
+    margin-bottom: 0.5rem;
+    
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #000;
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar ul li {
+    margin-left: 1rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+.form {
+    width: 450px;
+    margin: 0 auto;
+}
+
+.form_control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+}
+
+.form_control label {
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+}
+
+.form_control label input {
+    padding: 5px;
+}
+
+.form_control input{
+    padding: .5rem;
+    border-radius: 10px;
+    border: none;
+}
+
+.form-checkbox {
+    flex-direction: row;
+}
+
+.form-checkbox input {
+    margin-right: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 10px;
+   
+}
+
+
+.container .item {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 1rem;
+    flex: 1 1 29%;
+    text-align: center;
+    max-width: 29%;
+    height: 140px;
+}
+
+
+.item h2 .item p {
+    margin-bottom: 8px;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-around;
+    margin: .5rem;
+}
+
+.actions a, .actions input {
+    text-decoration: none;
+    background-color: #fff;
+    padding: 5px;
+    font-size: 15px;
+    color: #000;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.actions .details-btn{
+    border: 1px solid black;
+}
+
+.actions .edit-btn{
+    border: 1px solid green;
+    color: green;
+}
+
+.actions .delete-btn{
+    border: 1px solid red;
+    color: red;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    min-height: 50vh;
+}
+
+.container-home1, .container-home2{
+    border-radius: 10px;
+    flex: 1 1 29%;
+    text-align: center;
+    max-width: 29%;
+    height: 50px;
+    padding: 1rem;
+    background: rgb(198, 175, 240);
+} 
+
+.container-home1 a, .container-home2 a{
+    text-decoration: none;
+    color: #000;
+    
+}
+
+.show{
+    text-align: center;
+}

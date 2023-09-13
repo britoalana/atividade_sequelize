@@ -1,0 +1,33 @@
+<h1>Editando: {{livro.titulo}}</h1>
+<form action="/livro/update/{{livro.id}}" method="post" class="form">
+<input type="hidden" name="id" value="{{livro.id}}">
+    <div class="form_control">
+        <label for="autor">Nome do autor:</label>
+        <input type="text" name="autor" value="{{livro.autor}}">
+    </div>
+
+    <div class="form_control">
+        <label for="titulo">Título:</label>
+        <input type="text" name="titulo" value="{{livro.titulo}}">
+    </div>
+
+
+
+    <div class="form_control">
+        <label for="preco">Preço:</label>
+        <input type="number" name="preco" value="{{livro.preco}}">
+    </div>
+
+<div class="form_control form-checkbox">
+        {{#if livro.capaDura}}
+        <input type="checkbox" name="capaDura" checked>
+        {{else}}
+        <input type="checkbox" name="capaDura">
+        {{/if}}
+        <label for="capaDura">Capa Dura?</label>
+    </div>
+
+    <div class="form_control">
+        <input type="submit" value="Editar">
+    </div>
+</form>

@@ -1,0 +1,18 @@
+<a href="/">Voltar</a>
+<h1>Livros disponíveis</h1>
+<div class="container">
+    {{#each livros}}
+    <div class="item">
+        <h2>{{this.titulo}}</h2>
+        <p>{{this.autor}}</p>
+        <div class="actions">
+            <a href="/livros/{{this.id}}" class="details-btn">Ver detalhes</a>
+            <a href="/livros/edit/{{this.id}}" class="edit-btn">Editar</a>
+            <form action="/livros/delete/{{this.id}}" method="post">
+                <input class="delete-btn" type="submit" value="Excluir" >
+            </form>
+
+        </div>
+    </div>
+    {{/each}}
+</div>
